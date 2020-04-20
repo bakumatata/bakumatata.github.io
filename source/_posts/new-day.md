@@ -10,6 +10,8 @@ tags:
 
 ## 搭建顺序
 
+<!--more-->
+
 1. clone项目
 2. 安装hexo(如已安装，跳到第3步)
    1. `git bash here`
@@ -58,5 +60,6 @@ all_minifier: true
 
 ## 参考
 
-- 使用主题 [Fluid]([https://hexo.fluid-dev.com/docs/guide/#%E5%BF%85%E8%A6%81%E7%9A%84%E9%85%8D%E7%BD%AE](https://hexo.fluid-dev.com/docs/guide/#必要的配置))
+- 使用主题 [Fluid](https://hexo.fluid-dev.com/docs/guide/#必要的配置)
 - [hexo基本配置](https://hexo.io/zh-cn/docs/commands)
+

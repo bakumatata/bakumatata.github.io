@@ -41,6 +41,18 @@ all_minifier: true
 
 
 
+## Hexo主题的优劣势
+
+### 优势
+
+- 集成性高，主题很漂亮，需要自定义修改的部分少
+
+### 劣势
+
+- 需要安装node.js环境
+- 每次更新需要本地生成再发布，步骤繁琐
+- 不能在移动端上随写随发布
+
 ## 参考
 
 - 使用主题 [Fluid]([https://hexo.fluid-dev.com/docs/guide/#%E5%BF%85%E8%A6%81%E7%9A%84%E9%85%8D%E7%BD%AE](https://hexo.fluid-dev.com/docs/guide/#必要的配置))

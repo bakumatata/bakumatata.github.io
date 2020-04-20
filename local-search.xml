@@ -4,9 +4,38 @@
   
   
   <entry>
+    <title>new day</title>
+    <link href="/2020/04/20/new-day/"/>
+    <url>/2020/04/20/new-day/</url>
+    
+    <content type="html"><![CDATA[<h2 id="搭建顺序"><a href="#搭建顺序" class="headerlink" title="搭建顺序"></a>搭建顺序</h2><ol><li>clone项目</li><li>安装hexo(如已安装，跳到第3步)<ol><li><code>git bash here</code></li><li><code>npm install hexo-cli -g</code></li><li><code>npm install hexo --save</code></li><li>检查是否成功 <code>hexo -version</code></li></ol></li><li>写新文章 <code>hexo new [layout] &lt;title&gt;</code><ol><li>如果没有自定义layout，用<code>hexo new &quot;title&quot;</code></li></ol></li><li>生成 <code>hexo generate</code> 或简写为 <code>hexo g</code></li><li>本地预览<code>hexo server</code>  或简写为<code>hexo s</code>，正常会使用<code>http://localhost:4000/</code>预览（如果没及时关闭客户端会报错，报错的话试以下命令<ol><li>clean cache <code>hexo clean</code></li><li>generate again <code>hexo g</code></li><li><code>hexo server</code> again</li></ol></li><li>把根目录<code>public</code>里的文件全部剪切到根目录覆盖</li><li>git push</li><li><del>部署 <code>hexo deploy</code> 简写为<code>hexo d</code>(不使用，使用git push就行)</del></li></ol><h2 id="压缩图片"><a href="#压缩图片" class="headerlink" title="压缩图片"></a>压缩图片</h2><pre><code class="hljs yaml"><span class="hljs-string">npm</span> <span class="hljs-string">i</span> <span class="hljs-string">hexo-all-minifier</span> <span class="hljs-string">--save</span><span class="hljs-comment"># Mac 系统还需要额外安装</span><span class="hljs-string">brew</span> <span class="hljs-string">install</span> <span class="hljs-string">libtool</span> <span class="hljs-string">automake</span> <span class="hljs-string">autoconf</span> <span class="hljs-string">nasm</span><span class="hljs-comment"># 在博客配置中加入</span><span class="hljs-attr">all_minifier:</span> <span class="hljs-literal">true</span></code></pre><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul><li>使用主题 <a href="[https://hexo.fluid-dev.com/docs/guide/#%E5%BF%85%E8%A6%81%E7%9A%84%E9%85%8D%E7%BD%AE](https://hexo.fluid-dev.com/docs/guide/#必要的配置)">Fluid</a></li><li><a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener">hexo基本配置</a></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Tech</category>
+      
+      <category>Manual</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>intro</tag>
+      
+      <tag>code</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
-    <link href="/2020/04/17/hello-world/"/>
-    <url>/2020/04/17/hello-world/</url>
+    <link href="/2020/04/20/hello-world/"/>
+    <url>/2020/04/20/hello-world/</url>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="hljs bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="hljs bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="hljs bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     

@@ -13,7 +13,9 @@ tags:
 1. clone项目
 2. 安装hexo(如已安装，跳到第3步)
    1. `git bash here`
-   2. `npm install hexo-cli -g`
+      1. mac: 取得root权限 `sudo -i`
+      2. 全局安装`npm install -g hexo-cli`
+   2. 在文件夹下 `npm install hexo-cli -g`
    3. `npm install hexo --save`
    4. 检查是否成功 `hexo -version`
 3. 写新文章 `hexo new [layout] <title>`

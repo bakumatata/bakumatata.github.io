@@ -62,4 +62,6 @@ all_minifier: true
 
 - 使用主题 [Fluid](https://hexo.fluid-dev.com/docs/guide/#必要的配置)
 - [hexo基本配置](https://hexo.io/zh-cn/docs/commands)
+- [github page绑定个人域名](https://blog.csdn.net/qq_41684621/article/details/103230888)
+- [绑定多个二级域名](https://github.com/IcedSoul/wiki/wiki/使用Github-Pages绑定多个二级域名)
 

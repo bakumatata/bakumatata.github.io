@@ -30,6 +30,8 @@ tags:
 6. 把根目录`public`里的文件全部剪切到根目录覆盖
 7. git push
 8. ~~部署 `hexo deploy` 简写为`hexo d`(不使用，使用git push就行)~~
+9. 升级: 把最新的release拉下来, 复制 `_config.yml` 到 `/source/_data`, 注意之前自定义的部分
+10. [文章加密](https://github.com/MikeCoder/hexo-blog-encrypt)
 
 ## 压缩图片
 

@@ -22,7 +22,7 @@ body a {
   transition-timing-function: ease-in-out;
 }
 body a:hover {
-  color: #1abc9c;
+  color: #30a9de;
   text-decoration: none;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
@@ -35,7 +35,7 @@ img[srcset] {
   padding: 0.45rem;
 }
 .hover-with-bg:hover {
-  background-color: #ebedef;
+  background-color: #f8f9fa;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   border-radius: 0.15rem;
@@ -489,12 +489,12 @@ a.beian-police img {
 .navbar {
   background-color: transparent;
   font-size: 0.875rem;
-  color: white;
+  color: #fff;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 .navbar a {
-  color: white;
+  color: #fff;
 }
 .navbar a:hover {
   background-color: rgba(0,0,0,0.1);
@@ -532,10 +532,10 @@ a.beian-police img {
   padding-bottom: 5px;
 }
 .navbar-custom {
-  color: white;
+  color: #fff;
 }
 .navbar-custom a {
-  color: white;
+  color: #fff;
 }
 .top-nav-collapse {
   background-color: #2f4154;
@@ -586,7 +586,7 @@ a.beian-police img {
   overflow: visible;
 }
 .markdown-body pre code {
-  font-size: 100%;
+  font-size: 85%;
   display: block;
   overflow-x: auto;
   padding: 0.5rem 0;
@@ -644,7 +644,7 @@ a.beian-police img {
 }
 .pagination a:hover,
 .pagination .current {
-  background-color: #ebedef;
+  background-color: #f8f9fa;
 }
 .modal-dialog .modal-content {
   border: 0;
@@ -1007,7 +1007,7 @@ h6::before {
 }
 .tocbot-active-link {
   font-weight: bold;
-  color: #1abc9c;
+  color: #30a9de;
 }
 .tocbot-is-collapsed {
   max-height: 0;
@@ -1313,7 +1313,7 @@ h6::before {
   padding: 0.5rem;
 }
 .tagcloud a:hover {
-  color: #1abc9c !important;
+  color: #30a9de !important;
 }
 .links .card {
   box-shadow: none;

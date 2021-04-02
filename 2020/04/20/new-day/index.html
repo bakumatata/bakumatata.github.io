@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      607 字
+      656 字
     </span>
   
 
@@ -277,21 +277,35 @@
 </li>
 </ul>
 <h3 id="升级遇到的坑"><a href="#升级遇到的坑" class="headerlink" title="升级遇到的坑"></a>升级遇到的坑</h3><ul>
-<li>hexo g 时<code>rr: Error: Function yaml.safeLoad is removed in js-yaml 4. Use yaml.load instead, which is now safe by default.</code><ul>
+<li><p>hexo g 时<code>rr: Error: Function yaml.safeLoad is removed in js-yaml 4. Use yaml.load instead, which is now safe by default.</code></p>
+<ul>
 <li>js-yaml 降级: <code>npm i js-yaml@3.14.0</code></li>
 </ul>
 </li>
-<li>hero s 不能用 <ul>
+<li><p>hero s 不能用 </p>
+<ul>
 <li>安装<code>npm install hexo-server --save</code></li>
 </ul>
 </li>
-<li>不生成post文件夹里的文章<ul>
+<li><p>不生成post文件夹里的文章</p>
+<ul>
 <li>查看是否少了依赖 `npm list’</li>
 <li>安装依赖 <code>npm install hexo-generator-archive hexo-generator-category hexo-generator-index hexo-generator-tag hexo-renderer-ejs hexo-renderer-marked hexo-renderer-stylus --save</code>    记得最后加 <code>--save</code></li>
 </ul>
 </li>
-<li>fluid版本太低<ul>
+<li><p>fluid版本太低</p>
+<ul>
 <li>下载最新的release, 放到themes里, 更名为 <code>fluid</code> 替换掉目前的文件夹</li>
+</ul>
+</li>
+<li><p>推送到 git</p>
+<ul>
+<li><p>安装插件 <code>npm i hexo-deployer-git</code></p>
+</li>
+<li><p>在博客的<code>_config.fluid.yml</code>里添加一个deploy</p>
+<figure class="highlight yml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs yml"><span class="hljs-comment"># Deployment</span><br><span class="hljs-comment">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="hljs-attr">deploy:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>    <span class="hljs-attr">repo:</span> <span class="hljs-string">git@github.com:username/username.github.io.git</span><br>    <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span><br></code></pre></div></td></tr></table></figure></li>
+<li><p><code>hexo d</code></p>
+</li>
 </ul>
 </li>
 </ul>

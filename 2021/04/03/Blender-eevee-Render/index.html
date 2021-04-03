@@ -14,11 +14,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="搭建顺序">
+  <meta name="description" content="在用blender渲染测试场景建筑效果的时候, 发现eevee效果比cycles差很多, 但cycles太慢了, 我的电脑配置导致噪点特别多, 降噪都不好使. eevee早已发展得效果很接近cycles, 决定好好学eevee. ">
   <meta name="author" content="bakumatata">
   <meta name="keywords" content="">
   
-  <title>new day - Nothing here.</title>
+  <title>Blender eevee Render - Nothing here.</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -158,12 +158,12 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
+         style="background: url('/img/Washbasin_me.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="new day">
+            <span class="h2" id="subtitle" title="Blender eevee Render">
               
             </span>
 
@@ -173,8 +173,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-04-20 11:42" pubdate>
-        Monday, April 20th 2020, 11:42 am
+      <time datetime="2021-04-03 14:31" pubdate>
+        Saturday, April 3rd 2021, 2:31 pm
       </time>
     </span>
   
@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      691 字
+      199 字
     </span>
   
 
@@ -195,7 +195,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      9
+      2
        分钟
     </span>
   
@@ -225,107 +225,30 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">new day</h1>
+            <h1 style="display: none">Blender eevee Render</h1>
             
             <div class="markdown-body">
-              <h2 id="搭建顺序"><a href="#搭建顺序" class="headerlink" title="搭建顺序"></a>搭建顺序</h2><span id="more"></span>
+              <p>在用blender渲染测试场景建筑效果的时候, 发现eevee效果比cycles差很多, 但cycles太慢了, 我的电脑配置导致噪点特别多, 降噪都不好使. eevee早已发展得效果很接近cycles, 决定好好学eevee. </p>
+<span id="more"></span>
 
-<ol>
-<li>clone项目</li>
-<li>安装hexo(如已安装，跳到第3步)<ol>
-<li><code>git bash here</code><ol>
-<li>mac: 取得root权限 <code>sudo -i</code></li>
-<li>全局安装<code>npm install -g hexo-cli</code></li>
-</ol>
-</li>
-<li>在文件夹下 <code>npm install hexo-cli -g</code></li>
-<li><code>npm install hexo --save</code></li>
-<li>检查是否成功 <code>hexo -version</code></li>
-</ol>
-</li>
-<li>写新文章 <code>hexo new [layout] &lt;title&gt;</code><ol>
-<li>如果没有自定义layout，用<code>hexo new &quot;title&quot;</code></li>
-</ol>
-</li>
-<li>生成 <code>hexo generate</code> 或简写为 <code>hexo g</code> <strong>每次生成前先<code>hexo clean</code></strong></li>
-<li>本地预览<code>hexo server</code>  或简写为<code>hexo s</code>，正常会使用<code>http://localhost:4000/</code>预览（如果没及时关闭客户端会报错，报错的话试以下命令<ol>
-<li>clean cache <code>hexo clean</code></li>
-<li>generate again <code>hexo g</code></li>
-<li><code>hexo server</code> again</li>
-</ol>
-</li>
-<li><del>把根目录<code>public</code>里的文件全部剪切到根目录覆盖</del><ul>
-<li>直接推送public文件夹里的文件到github</li>
+<p>在ArtStation找到一个洗手盆, 造型很有意思, 试着在blender重建了一下, 最后达到原图的90%相似度吧.</p>
+<p><img src="/img/Washbasin_origin.jpg" srcset="/img/loading.gif" lazyload alt="原图"></p>
+<p><a target="_blank" rel="noopener" href="https://www.artstation.com/artwork/k4qAQ2">原图链接</a></p>
+<p><img src="/img/Washbasin_me.jpg" srcset="/img/loading.gif" lazyload alt="我模仿的重建图"></p>
+<h3 id="记录一下建模和渲染的设置要点"><a href="#记录一下建模和渲染的设置要点" class="headerlink" title="记录一下建模和渲染的设置要点"></a>记录一下建模和渲染的设置要点</h3><h4 id="Model"><a href="#Model" class="headerlink" title="Model"></a>Model</h4><ul>
+<li>Subdivision Surface</li>
+<li>Displacement- stucco texture</li>
+<li>Array</li>
+<li>Curve</li>
+</ul>
+<h4 id="Light"><a href="#Light" class="headerlink" title="Light"></a>Light</h4><ul>
+<li>1 Area Lights 1 Sun <ul>
+<li>Area Light: power : 6000 W</li>
+<li>Sun: power: 8, Angle 12º</li>
+<li>不要用Contact Shadows, 把挨着墙的模型向外移一点可以解决阴影和物体的距离问题</li>
+<li>Size 调小, 让光刚好从窗口射入 , Size太大会把整个场景照太亮</li>
 </ul>
 </li>
-<li>git push</li>
-<li><del>部署 <code>hexo deploy</code> 简写为<code>hexo d</code>(不使用，使用git push就行)</del></li>
-<li>升级: 把最新的release拉下来, 复制 <code>_config.yml</code> 到 <code>/source/_data</code>, 注意之前自定义的部分</li>
-<li><a target="_blank" rel="noopener" href="https://github.com/MikeCoder/hexo-blog-encrypt">文章加密</a></li>
-</ol>
-<h2 id="压缩图片"><a href="#压缩图片" class="headerlink" title="压缩图片"></a>压缩图片</h2><figure class="highlight yaml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs yaml"><span class="hljs-string">npm</span> <span class="hljs-string">i</span> <span class="hljs-string">hexo-all-minifier</span> <span class="hljs-string">--save</span><br><br><span class="hljs-comment"># Mac 系统还需要额外安装</span><br><span class="hljs-string">brew</span> <span class="hljs-string">install</span> <span class="hljs-string">libtool</span> <span class="hljs-string">automake</span> <span class="hljs-string">autoconf</span> <span class="hljs-string">nasm</span><br><br><span class="hljs-comment"># 在博客配置中加入</span><br><span class="hljs-attr">all_minifier:</span> <span class="hljs-literal">true</span><br><br><span class="hljs-comment"># 用mac下压缩的小程序 https://imageoptim.com/howto.html</span><br></code></pre></div></td></tr></table></figure>
-
-
-
-<h2 id="HEXO版本升级"><a href="#HEXO版本升级" class="headerlink" title="HEXO版本升级"></a>HEXO版本升级</h2><ul>
-<li>升级node.js–到官网下载最新版安装</li>
-<li>升级hexo<ul>
-<li>查看hexo版本 <code>hexo -v</code></li>
-<li>打开权限(mac) <code>sudo -s</code></li>
-<li><code>npm install -g hexo-cli</code></li>
-<li>升级必要package <code>npm install -g npm-check</code>  <code>nom update -g</code></li>
-<li>打开博客根目录下的<code>package.json</code>, 把<code>&quot;dependencies”: </code>下的<code>&quot;hexo&quot;: &quot;^5.0.0”</code></li>
-<li><code>npm update</code></li>
-</ul>
-</li>
-</ul>
-<h3 id="升级遇到的坑"><a href="#升级遇到的坑" class="headerlink" title="升级遇到的坑"></a>升级遇到的坑</h3><ul>
-<li><p>hexo g 时<code>rr: Error: Function yaml.safeLoad is removed in js-yaml 4. Use yaml.load instead, which is now safe by default.</code></p>
-<ul>
-<li>js-yaml 降级: <code>npm i js-yaml@3.14.0</code></li>
-</ul>
-</li>
-<li><p>hero s 不能用 </p>
-<ul>
-<li>安装<code>npm install hexo-server --save</code></li>
-</ul>
-</li>
-<li><p>不生成post文件夹里的文章</p>
-<ul>
-<li>查看是否少了依赖 `npm list’</li>
-<li>安装依赖 <code>npm install hexo-generator-archive hexo-generator-category hexo-generator-index hexo-generator-tag hexo-renderer-ejs hexo-renderer-marked hexo-renderer-stylus --save</code>    记得最后加 <code>--save</code></li>
-</ul>
-</li>
-<li><p>fluid版本太低</p>
-<ul>
-<li>下载最新的release, 放到themes里, 更名为 <code>fluid</code> 替换掉目前的文件夹</li>
-</ul>
-</li>
-<li><p>推送到 git</p>
-<ul>
-<li><p>安装插件 <code>npm i hexo-deployer-git</code></p>
-</li>
-<li><p>在博客的<code>_config.fluid.yml</code>里添加一个deploy</p>
-<figure class="highlight yml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs yml"><span class="hljs-comment"># Deployment</span><br><span class="hljs-comment">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="hljs-attr">deploy:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>    <span class="hljs-attr">repo:</span> <span class="hljs-string">git@github.com:username/username.github.io.git</span><br>    <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span><br></code></pre></div></td></tr></table></figure></li>
-<li><p><code>hexo d</code></p>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="Hexo主题的优劣势"><a href="#Hexo主题的优劣势" class="headerlink" title="Hexo主题的优劣势"></a>Hexo主题的优劣势</h2><h3 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h3><ul>
-<li>集成性高，主题很漂亮，需要自定义修改的部分少</li>
-</ul>
-<h3 id="劣势"><a href="#劣势" class="headerlink" title="劣势"></a>劣势</h3><ul>
-<li>需要安装node.js环境</li>
-<li>每次更新需要本地生成再发布，步骤繁琐</li>
-<li>不能在移动端上随写随发布</li>
-<li>同一个git账号只能有一个一级域名xxx.github.io，在同一个机器上切换不同git账户时，操作非常非常繁琐</li>
-</ul>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li>使用主题 <a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/#%E5%BF%85%E8%A6%81%E7%9A%84%E9%85%8D%E7%BD%AE">Fluid</a></li>
-<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands">hexo基本配置</a></li>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41684621/article/details/103230888">github page绑定个人域名</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/IcedSoul/wiki/wiki/%E4%BD%BF%E7%94%A8Github-Pages%E7%BB%91%E5%AE%9A%E5%A4%9A%E4%B8%AA%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D">绑定多个二级域名</a></li>
 </ul>
 
             </div>
@@ -333,22 +256,11 @@
             <div>
               <div class="post-metas mb-3">
                 
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/Tech/">Tech</a>
-                    
-                      <a class="hover-with-bg" href="/categories/Tech/Manual/">Manual</a>
-                    
-                  </div>
-                
                 
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/intro/">intro</a>
-                    
-                      <a class="hover-with-bg" href="/tags/code/">code</a>
+                      <a class="hover-with-bg" href="/tags/Render-Blender/">Render,Blender</a>
                     
                   </div>
                 
@@ -365,15 +277,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/10/01/chapter1/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">chapter1</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2021/04/02/Art-style-test/">
+                        <span class="hidden-mobile">Art style test</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>

@@ -11,6 +11,12 @@
     <content type="html"><![CDATA[<p>在用blender渲染测试场景建筑效果的时候, 发现eevee效果比cycles差很多, 但cycles太慢了, 我的电脑配置导致噪点特别多, 降噪都不好使. eevee早已发展得效果很接近cycles, 决定好好学eevee. </p><span id="more"></span><p>在ArtStation找到一个洗手盆, 造型很有意思, 试着在blender重建了一下, 最后达到原图的90%相似度吧.</p><p><img src="/img/Washbasin_origin.jpg" alt="原图"></p><p><a href="https://www.artstation.com/artwork/k4qAQ2">原图链接</a></p><p><img src="/img/Washbasin_me.jpg" alt="我模仿的重建图"></p><h3 id="记录一下建模和渲染的设置要点"><a href="#记录一下建模和渲染的设置要点" class="headerlink" title="记录一下建模和渲染的设置要点"></a>记录一下建模和渲染的设置要点</h3><h4 id="Model"><a href="#Model" class="headerlink" title="Model"></a>Model</h4><ul><li>Subdivision Surface</li><li>Displacement- stucco texture</li><li>Array</li><li>Curve</li></ul><h4 id="Light"><a href="#Light" class="headerlink" title="Light"></a>Light</h4><ul><li>1 Area Lights 1 Sun <ul><li>Area Light: power : 6000 W</li><li>Sun: power: 8, Angle 12º</li><li>不要用Contact Shadows, 把挨着墙的模型向外移一点可以解决阴影和物体的距离问题</li><li>Size 调小, 让光刚好从窗口射入 , Size太大会把整个场景照太亮</li></ul></li></ul>]]></content>
     
     
+    <categories>
+      
+      <category>Blender</category>
+      
+    </categories>
+    
     
     <tags>
       

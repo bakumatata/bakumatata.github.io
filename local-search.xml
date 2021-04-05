@@ -33,7 +33,7 @@
     <link href="/2021/04/02/Art-style-test/"/>
     <url>/2021/04/02/Art-style-test/</url>
     
-    <content type="html"><![CDATA[<h2 id="游戏整体的美术风格"><a href="#游戏整体的美术风格" class="headerlink" title="游戏整体的美术风格"></a>游戏整体的美术风格</h2><p>在美术风格上犹豫了很久, 一开始偏向low poly, 后来又觉得手绘风格更好.</p><span id="more"></span><p><img src="/img/artStyle01.jpg" alt="art style01"></p><p>房子模型的面数影响很大, 边角锋利没有倒角的无论怎么调整光和材质球都很boring, 尝试了加bump(为了画bump还特意重新买了数位板….), 加normal贴图, 加noise贴图, 加渐变贴图, 手绘表面贴图都不满意, 最大的限制是 <strong>要控制资源的大小</strong>, 所以不能每个建筑单独画纹理, serialized texture是最大的挑战.</p><p><strong>如何在简化纹理, 不使用过多模型面数的情况下, 让建筑显得不卡通, 又不无聊</strong> –这是我给自己的命题.</p><p><img src="/img/artStyle02.jpg" alt="art style02 still boring"></p><p>加了电线和灯, 调了色, 看上去稍微没这么无聊了.</p><p><img src="/img/artStyle03.jpg" alt="art style03"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="游戏整体的美术风格"><a href="#游戏整体的美术风格" class="headerlink" title="游戏整体的美术风格"></a>游戏整体的美术风格</h2><p>在美术风格上犹豫了很久, 一开始偏向low poly, 后来又觉得手绘风格更好.</p><span id="more"></span><p><img src="/img/artStyle01.jpg" alt="art style01"></p><p>房子模型的面数影响很大, 边角锋利没有倒角的无论怎么调整光和材质球都很boring, 尝试了加bump(为了画bump还特意重新买了数位板….), 加normal贴图, 加noise贴图, 加渐变贴图, 手绘表面贴图都不满意, 最大的限制是 <strong>要控制资源的大小</strong>, 所以不能每个建筑单独画纹理, serialized texture是最大的挑战.</p><p><strong>如何在简化纹理, 不使用过多模型面数的情况下, 让建筑显得不卡通, 又不无聊</strong> –这是我给自己的命题.</p><p><img src="/img/artStyle02.jpg" alt="art style02 still boring"></p><p>加了电线和灯, 调了色, 看上去稍微没这么无聊了.</p><p><img src="/img/artStyle03.jpg" alt="art style03"></p><p>最终大概确定为这样</p><p><img src="/img/artStyleFInal.jpg" alt="art style Final"></p>]]></content>
     
     
     <categories>

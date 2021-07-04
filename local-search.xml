@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Story</title>
+    <link href="/2021/07/05/Story/"/>
+    <url>/2021/07/05/Story/</url>
+    
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="c25cc2cc061393ead9f08b973588e46300ad12189f4dd7e97c899a65562fffd5">e3d362d818db61b38dc7cb62f05ef1222b623c90c09c47e861d348ce2be0d0197a1ea6cce13b7f0cfd91abe231a4311a4fca827ee72aa73f6e7b7703854fac4ca315f143eb602c6fad02299474a69d269f9009b581ec69600b56976968b89f06c15df955df8bef6e50f4b4061966d19891bacb3da2e604852371cc9e10bb40bb3cf593ba8fd2b5ea5fc12bd539bc9e57921cbf193c1721af5c8a5a5d89979b81a2685cf75118c075c6564989057e033edf82d66322daeec1054e74165f3ecdad2ae1c702edd724764c2155f735efad4f4084d8f2a4f12cb50584436179df338879d4a44123098e38353975148a6ee0cec8093e95c2540e2dc41eb7803c8e1af49e93ddf8233ecdbb7d1abb72f2c7a89aba6896d6b986b8fff68fd6487c0acb9652b3dedb048d2841f20290e7ccfc453e1c089d0fcbe11d4fb4d08a98db8f96c41829b9d61a6d1972bf1e55be490eefa529e79ae5afa2d9638345b60e2c927c567f9bb8176c890891a8dcd795740e3c3a11f5d8d8656c13de28d77bb47bca3434889f1f326d561916f20479d3ad7c2a5aafa8b32a1df755577d741e4bef89db0e2d47b1486a82edf274f13b5ab79443d3c1d07d9230ded3ee8e3e3ec3ab635f7f1cfcc52396703ddbbbf32d1ae598d222d23916485ec0f526107519a74218c61de8e557d8a3173fea4a77942a67afb6e423b976b74f3900566a94753c14733481112c7bbcd5a668ac0242295f0d2b0cb8566e5dced704a57ea5dcbdb73770b8b9588b0a2790ba47b268da8f90c04168a788a56e852be181c464a41384d066f3ce1961202c3d520d555f09a2d9a8c09537af67409f86f8dd599c74ee487fecf069ad1b51b74d80bb008eb16091f127bb9091ff5edb21a227a20ac73cffc28d6d7c3d6ba64304c0348c092e90b35ba8a3643d6465d8446c44f727c5aba6bd1f806a5139c45852d89776c5f9e077dc9fa84359187cad35ecdfffa95e9111b87fb067</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    
+    
+    <categories>
+      
+      <category>Story</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>story</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Art style new</title>
     <link href="/2021/04/13/Art-style-new/"/>
     <url>/2021/04/13/Art-style-new/</url>
@@ -97,9 +122,9 @@
     
     <tags>
       
-      <tag>chapter</tag>
-      
       <tag>story</tag>
+      
+      <tag>chapter</tag>
       
     </tags>
     
@@ -126,9 +151,9 @@
     
     <tags>
       
-      <tag>chapter</tag>
-      
       <tag>story</tag>
+      
+      <tag>chapter</tag>
       
     </tags>
     
